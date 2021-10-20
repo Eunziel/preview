@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.text1{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.text2{
+    background-color: hsl(184, 100%, 22%); 
+}
+.text3{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.box{
+    padding: 50px 40px;
+    padding-right: 100px;
+}
+.box h2{
+    margin-top: 10px;
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+} 
+.text1 h2, .text2 h2, .text3 h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.box p{
+    margin-top: 20px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    line-height: 1.3em;
+}
+.box a{
+    margin-top: 70px;
+    display: block;
+    padding: 18px 0;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    padding-left: 50px; 
+    border-radius: 50px;
+    border: 2px solid transparent;
+    font-weight: 700;
+}
+.text1 .btn{
+    color: hsl(31, 77%, 52%);
+}
+.text2 .btn{
+    color: hsl(184, 100%, 22%);
+}
+.text3 .btn{
+    color: hsl(179, 100%, 13%);
+}
+.box a:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    color: hsl(0, 0%, 95%);
+}
+@media screen and (max-width: 700px){
+    .container{
+        margin-top: 200px;
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .box p{
+        width: 130%;
+    }
+    .text1{
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .text2{
+        border-top-right-radius: 0px;
+
+    }
+    .text3{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+    .box a{
+        padding: 20px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 400px){
+    .box p{
+        width: 150%;
+    }
+    .box a{
+        /* display: block; */
+        width: 120%;
+    }
+    .text3{
+        width: 100%;
+    }
+    .text1{
+        width: 100%;
+    }
+}
